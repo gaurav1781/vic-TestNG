@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="resources.registerTest">
+        <methods>
+          <include name="register_user"/>
+          <include name="initializebasesetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- resources.registerTest -->
+      <class name="resources.signupTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="home_login"/>
+          <include name="initializebasesetup"/>
+        </methods>
+      </class> <!-- resources.signupTest -->
+      <class name="resources.baseTest">
+        <methods>
+          <include name="setup"/>
+          <include name="generatehtmlreport"/>
+          <include name="afterclass"/>
+          <include name="initializebasesetup"/>
+        </methods>
+      </class> <!-- resources.baseTest -->
+      <class name="resources.signinTest">
+        <methods>
+          <include name="verifysigninPage"/>
+          <include name="initializebasesetup"/>
+          <include name="close_brow"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- resources.signinTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

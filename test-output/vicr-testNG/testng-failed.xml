@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [vicr-testNG]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browsertype" value="chrome"/>
+    <parameter name="appURL" value="https://www.vicroads.vic.gov.au/"/>
+    <groups>
+      <run>
+        <include name="FunctionalTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="resources.registerTest">
+        <methods>
+          <include name="register_user"/>
+          <include name="initializebasesetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- resources.registerTest -->
+      <class name="resources.signinTest">
+        <methods>
+          <include name="verifysigninPage"/>
+          <include name="initializebasesetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- resources.signinTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [vicr-testNG] -->

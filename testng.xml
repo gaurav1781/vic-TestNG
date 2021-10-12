@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="vicr-testNG">
+    <groups>  
+<run>  
+<include name="FunctionalTest"/>  
+</run>  
+</groups>  
+  <test thread-count="5" name="Test">
+  <parameter name="browsertype" value="chrome"/>
+  <parameter name="appURL" value="https://www.vicroads.vic.gov.au/"/> 
+   
+    <classes>
+      <class name="resources.baseTest"/>
+      <class name="resources.signinTest"/>
+      <class name="resources.registerTest"/>
+    </classes>
+  </test> 
+</suite> 
